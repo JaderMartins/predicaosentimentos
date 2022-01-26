@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container" style="text-align: center">
+      <header class="jumbotron" style="background-color: #2592d1; color: white">
+        <h1>Sistema de Reconhecimento de Emoções</h1>
+        <p>Analise sua expressão facial</p>
+      </header>
+      <h2>Sorriso</h2>
+      <p>
+        "É mais fácil obter o que se deseja com um sorriso do que à ponta da espada."
+      </p>
+      <h2>Irritação</h2>
+      <p>
+        "A força que tiramos do rancor e da irritação é apenas fraqueza."
+      </p>
+      <h2>Surpresa</h2>
+      <p>
+        "Aquele que já não consegue sentir espanto nem surpresa está, por assim dizer, morto; os seus olhos estão apagados."
+      </p>
+      <button type="button" class="btn btn-primary" onclick="init()">
+        Start - Reconhecimento Facial
+      </button>
+      <div id="webcam-container"></div>
+      <div class="display-4" id="label-container"></div>
+
+      <footer
+        class="panel-footer"
+        style="text-align: center; background-color: #2592d1; color: white"
+      >
+        Todos direitos reservados - Carlos Roberto e Jader Martins - IFSULDEMINAS -
+        Campus Machado
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script src="tensor.js"></script>
+  </body>
+</html>
